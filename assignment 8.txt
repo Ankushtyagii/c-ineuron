@@ -1,0 +1,570 @@
+Assignment - 8            A Job Ready Bootcamp in C++,DSA and IOT     MySirG
+
+                                      Pattern Problems
+
+1.
+
+sol.
+	#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=5;j++)
+	   {
+	       if(j<=i)
+	        printf("*");
+	       else
+	        printf(" ");
+	   }
+	   printf("\n");
+	}
+	
+	 printf("\n");
+	   return 0;
+
+	}
+
+2..
+
+sol..
+	#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=5;j++)
+	   {
+	       if(j>=6-i)
+	        printf("*");
+	       else
+	        printf(" ");
+	   }
+	   printf("\n");
+	}
+	
+	 printf("\n");
+	   return 0;
+	
+	}
+
+
+3
+
+sol..
+	#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=5;j++)
+	   {
+	       if(j<=6-i)
+	        printf("*");
+	       else
+	        printf(" ");
+	   }
+	   printf("\n");
+	}
+	
+	 printf("\n");
+	   return 0;
+	
+	}
+
+
+
+4
+
+SOL.. 
+	#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=5;j++)
+	   {
+       if(j>i-1)
+	        printf("*");
+       else
+	        printf(" ");
+	   }
+	   printf("\n");
+	}
+	
+	 printf("\n");
+	   return 0;
+	
+	}
+
+
+5
+
+SOL..
+
+	#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=10;j++)
+	   {
+	
+	       if(j>=6-i&&j<=4+i)
+	        printf("*");
+		       else
+	        printf(" ");
+	
+	   }
+	   printf("\n");
+	}
+	
+	 printf("\n");
+	   return 0;
+	
+	}
+
+6..
+
+SOL..
+	#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=10;j++)
+	   {
+	
+	       if(j>=i&&j<=10-i)
+	        printf("*");
+	       else
+	        printf(" ");
+	
+	   }
+	   printf("\n");
+	}
+	
+	 printf("\n");
+	   return 0;
+	
+	}
+
+7..
+
+SOL..
+	#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=0;i<=4;i++)
+	{
+	   for(j=1;j<=10;j++)
+	   {
+	
+	       if(j>=6-i&&j<=5+i)
+	        printf(" ");
+	       else
+	        printf("*");
+	
+	   }
+	    printf("\n");
+	}
+	
+	 printf("\n");
+	   return 0;
+	
+	}
+
+
+
+8..
+
+SOL..
+	#include<stdio.h>
+	int main()
+	{
+	int i,j,k,b;
+	for(i=1;i<=4;i++)
+	{
+	      k=1;
+	      b=i-1;
+	
+	
+	   for(j=1;j<=7;j++)
+	   {
+	
+	
+	       if(j>=5-i&&j<=4)
+	        {
+	            printf("%d",k);
+	            k++;
+	        }
+	        else if(j<=3+i&&j>=4)
+	            printf("%d",b--);
+	        else
+	            printf(" ");
+	   }
+	   printf("\n");
+	}
+	
+	 printf("\n");
+	   return 0;
+
+	}
+
+
+9..
+
+SOL..
+	#include<stdio.h>
+	int main()
+	{
+	    int i,j,k,b;
+	    for(i=1;i<=4;i++)
+	    {
+	        k=1;
+	        b=4-i;
+	        for(j=1; j<=7 ; j++)
+	        {
+	
+	          if(j>=i&&j<=4)
+	                printf("%d",k++);
+	                else if(j>=5&&j<=8-i)
+	                    printf("%d",b--);
+	                    else
+	                        printf(" ");
+	        }
+	        printf("\n");
+	    }
+	    return 0;
+	
+	}
+
+
+
+10..
+
+SOL..
+	#include<stdio.h>
+	int main()
+	{
+	    int i,j,k,b,c,d;
+	   for(i=1;i<=4;i++)
+	   {
+	       k=0;
+		   b=0;
+	       c=5-i;
+	       d=c-1;
+	       for(j=1;j<=7;j++)
+	       {
+	if(i<=1)
+	{
+	    if(j<=5-i&&j>=1)
+	    printf("%d",++k);
+	     if(j>3+i&&j<=7)
+	     {
+	        printf("%d",d--);
+	     }
+	}
+	if(i>=2)
+	{
+	    if(j<=5-i&&j>=1)
+	    {
+	        printf("%d",++b);
+	    }
+	    else if(j>=3+i&&j<=7)
+	    {
+	        printf("%d",c--);
+	    }
+	    else
+	        printf(" ");
+	}
+	       }
+	       printf("\n");
+	
+	   }
+	    return 0;
+
+	}
+
+11..
+
+SOL..
+	#include<stdio.h>
+	 int main()
+	 {
+	     int i,j,b,c;
+	     for(i=1;i<=5;i++)
+	     {
+	         b='A';
+	
+	         for(j=1;j<=9;j++)
+	         {
+	             if(j>=6-i&&j<=5)
+	             {
+	                printf("%c",b++);
+	                c=b-1;
+	             }
+	             else if(j>5&&j<=4+i)
+	                printf("%c",--c);
+	             else
+	                printf(" ");
+	         }
+	         printf("\n");
+	     }
+	     return 0;
+	 }
+
+
+12..
+
+SOL..
+ 	#include<stdio.h>
+	 int main()
+	 {
+	     int i,j,b,c;
+	     for(i=1;i<=5;i++)
+	     {
+	         b='A';
+	
+	         for(j=1;j<=9;j++)
+	         {
+	             if(j>=i&&j<=4)
+	             {
+	                printf("%c",b++);
+	                c=b-1;
+	             }
+	             else if(j>=4&&j<=8-i)
+	                printf("%c",--c);
+	             else
+	                printf(" ");
+	         }
+	         printf("\n");
+	     }
+	     return 0;
+	 }
+
+
+13..
+
+SOL..
+ 	 #include<stdio.h>
+	 int main()
+	 {
+	     int i,j,b,c,d;
+	     for(i=1;i<=7;i++)
+	     {
+	         b='A';
+	         d=b;
+
+	         for(j=1;j<=13;j++)
+	         {
+	
+	             if(i==1)
+	             {
+	                 if(j>=1&&j<=8-i)
+	                 {
+	                    printf("%c",b++);
+	                    c=b-1;
+	                 }
+	                 else if(j<=13&&j>=6+i)
+	                 {
+	                     printf("%c",--c);
+	                 }
+	             }
+	             if(i>=2)
+	             {
+	                 if(j>=1&&j<=8-i)
+	                 {
+	                     printf("%c",d++);
+	                 }
+	                 else if(j>=6+i&&j<=13)
+	                    printf("%c",--d);
+	                    else
+	                    printf(" ");
+	             }
+	         }
+	         printf("\n");
+	     }
+	     return 0;
+	 }
+
+
+14...
+
+SOL..#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=5;j++)
+	   {
+	       if(j==1||j==i||i==5)
+	           printf("*");
+	    else
+	            printf(" ");
+	   }
+	   printf("\n");
+	}
+	 printf("\n");
+	   return 0;
+	
+	}
+
+
+
+15..
+
+SOL..
+	#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=5;j++)
+	   {
+	       if(j==5||j==6-i||i==5)
+	           printf("*");
+	    else
+	            printf(" ");
+	   }
+	   printf("\n");
+	}
+	 printf("\n");
+	   return 0;
+	
+	}
+
+
+16..
+
+SOL..#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=9;j++)
+	   {
+	       if(i==5||j==6-i||j==4+i)
+	           printf("*");
+	    else
+	            printf(" ");
+	   }
+	   printf("\n");
+	}
+	 printf("\n");
+	   return 0;
+	
+	}
+
+
+17..
+
+SOL..
+	#include<stdio.h>
+	int main()
+		{
+	int i,j;
+	for(i=1;i<=5;i++)
+	{
+	   for(j=1;j<=9;j++)
+	   {
+	       if(i==1||j==i||j==10-i)
+	           printf("*");
+	    else
+	            printf(" ");
+	   }
+	   printf("\n");
+	}
+	 printf("\n");
+	   return 0;
+	
+	}
+
+
+18..
+
+SOL..
+	#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=9;i++)
+	{
+	   for(j=1;j<=9;j++)
+	   {
+	      if(i>=1&&i<=5)
+	      {
+	          if(j>=6-i&&j<=4+i)
+	              printf("*");
+	              else
+	                printf(" ");
+	      }else
+	      {
+	          if(j>=i-4&&j<=14-i)
+	            printf("*");
+	          else
+	            printf(" ");
+	      }
+	   }
+	   printf("\n");
+	}
+	 printf("\n");
+	   return 0;
+
+	}
+
+19..
+
+SOL..#include<stdio.h>
+	int main()
+	{
+	int i,j;
+	for(i=1;i<=3;i++)
+	{
+	   for(j=1;j<=19;j++)
+	   {
+	       if(i>=1&&i<=3)
+	       {
+	           if((j>=4-i&&j<=6+i)||(j>=14-i&&j<=16+i))
+	               printf("*");
+	                else
+	                    printf(" ");
+	       }
+	   }
+	   printf("\n");
+		}
+	        for(i=1;i<=10;i++)
+	           {
+	               for(j=1;j<=19;j++)
+	               {
+	                   if(i==1&&j==7)
+	                    printf("MySirG");
+	                   if(i==1&&j>=7&&j<=12)
+	                    continue;
+	                   if(j>=i&&j<=20-i)
+	                    printf("*");
+	                   else
+	                    printf(" ");
+	               }
+	               printf("\n");
+	           }
+	   return 0;
+
+	}
+
+
+
+
+
+
+
